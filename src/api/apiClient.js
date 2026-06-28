@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'https://pubg-project.onrender.com', // 백엔드 주소
+  baseURL: 'https://pubg-project.onrender.com/api', // 백엔드 주소
   headers: { 'Content-Type': 'application/json' }
 });
 
