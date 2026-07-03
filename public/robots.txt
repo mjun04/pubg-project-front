@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pubg-meta.vercel.app/sitemap.xml
