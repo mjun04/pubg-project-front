@@ -2,7 +2,7 @@ import { defineStore } from 'pinia';
 import { ref } from 'vue';
 
 export const useAppStore = defineStore('app', () => {
-  const currentMap = ref('Erangel');
+  const currentMap = ref('전체');
   const searchHistory = ref(JSON.parse(localStorage.getItem('searchHistory')) || []);
 
   const setMap = (mapName) => { currentMap.value = mapName; };

@@ -5,5 +5,8 @@ const apiClient = axios.create({
   headers: { 'Content-Type': 'application/json' }
 });
 
-export const fetchWeapons = (mapName) => apiClient.get(`/weapons?map=${mapName}`);
+export const fetchWeapons = (mapName) => apiClient.get('/weapons', { 
+  params: { map: mapName } 
+});
+
 export const fetchPlayer = (playerName) => apiClient.get(`/players/${playerName}`);
