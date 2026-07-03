@@ -3,7 +3,7 @@
     <header class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-6">
       <div>
         <h1 class="text-4xl font-black text-amber-500 tracking-tighter uppercase">METAMETER</h1>
-        <p class="text-neutral-400 mt-1 font-medium">배그 무기 티어 & 실시간 K/D 분석</p>
+        <p class="text-neutral-400 mt-1 font-medium">실시간 배그 무기 티어 & K/D 분석</p>
       </div>
       <div class="relative w-full md:w-80">
         <input v-model="searchQ" @keyup.enter="search" type="text" placeholder="플레이어 닉네임 검색..." 
