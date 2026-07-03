@@ -3,7 +3,7 @@
     <header class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-6">
       <div>
         <h1 class="text-4xl font-black text-amber-500 tracking-tighter uppercase">METAMETER</h1>
-        <p class="text-neutral-400 mt-1 font-medium">최종 장착 기준 무기 티어 & 실시간 K/D 분석</p>
+        <p class="text-neutral-400 mt-1 font-medium">배그 무기 티어 & 실시간 K/D 분석</p>
       </div>
       <div class="relative w-full md:w-80">
         <input v-model="searchQ" @keyup.enter="search" type="text" placeholder="플레이어 닉네임 검색..." 
@@ -13,7 +13,7 @@
 
     <main>
       <div class="flex gap-3 mb-6 border-b border-neutral-800 pb-4 overflow-x-auto">
-        <button v-for="map in ['Erangel', 'Miramar', 'Taego', 'Rondo']" :key="map" @click="appStore.setMap(map)"
+        <button v-for="map in ['전체', 'Erangel', 'Miramar', 'Taego', 'Rondo', 'Sanhok', 'Vikendi', 'Deston']" :key="map" @click="appStore.setMap(map)"
           :class="['px-6 py-2 rounded-full font-bold whitespace-nowrap transition-colors', appStore.currentMap === map ? 'bg-amber-500 text-neutral-950' : 'bg-neutral-800 text-neutral-400 hover:bg-neutral-700']">
           {{ map }}
         </button>
@@ -53,7 +53,7 @@
             <ul class="space-y-2">
               <li v-for="part in w.topAttachments" :key="part.name" class="flex justify-between items-center bg-neutral-800/50 p-3 rounded-lg">
                 <span class="font-medium text-neutral-200 text-sm">{{ part.name }}</span>
-                <span class="text-xs font-mono text-amber-500 font-semibold bg-amber-500/10 px-2 py-1 rounded">평균 {{ part.avgRank }}위</span>
+              
               </li>
             </ul>
           </div>
