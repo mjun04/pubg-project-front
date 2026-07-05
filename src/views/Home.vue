@@ -13,7 +13,7 @@
 
     <main>
       <div class="flex gap-3 mb-6 border-b border-neutral-800 pb-4 overflow-x-auto">
-        <button v-for="map in ['전체', 'Erangel', 'Miramar', 'Taego', 'Rondo', 'Sanhok', 'Vikendi', 'Deston']" :key="map" @click="appStore.setMap(map)"
+        <button v-for="map in ['전체', 'Erangel', 'Miramar', 'Taego', 'Rondo', 'Sanhok', 'Vikendi', 'Deston', 'Karakin']" :key="map" @click="appStore.setMap(map)"
           :class="['px-6 py-2 rounded-full font-bold whitespace-nowrap transition-colors', appStore.currentMap === map ? 'bg-amber-500 text-neutral-950' : 'bg-neutral-800 text-neutral-400 hover:bg-neutral-700']">
           {{ map }}
         </button>
